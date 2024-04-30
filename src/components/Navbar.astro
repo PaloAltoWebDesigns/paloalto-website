@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 import StackedPaloAltoLogo from '../images/PaloAltoLogo/stackedLogo.png';
 ---
 
@@ -11,7 +10,7 @@ import StackedPaloAltoLogo from '../images/PaloAltoLogo/stackedLogo.png';
     <div class="cs-container">
         <!--Nav Logo-->
         <a href="" class="cs-logo" aria-label="back to home">
-            <Image src={StackedPaloAltoLogo} alt="Tree Logo" width="210" height="29" aria-hidden="true" decoding="async"/>
+            <img src={StackedPaloAltoLogo.src} alt="Tree Logo" width="210" height="29" aria-hidden="true" decoding="async"/>
         </a>
         <!--Navigation List-->
         <nav class="cs-nav" role="navigation">

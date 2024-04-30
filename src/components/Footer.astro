@@ -1,3 +1,9 @@
+---
+import { Image } from 'astro:assets';
+import StraightPaloAltoLogo from '../images/PaloAltoLogo/boldWhiteStraight.png';
+---
+
+
 <!-- ============================================ -->
 <!--                  Footer                      -->
 <!-- ============================================ -->
@@ -6,20 +12,17 @@
     <div class="cs-container">
         <div class="cs-top">
             <a aria-label="go back to home" class="cs-logo" href="">
-                <img class="cs-logo-img" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos/agency-logo.svg" alt="logo" width="209" height="40">
+                <Image class="cs-logo-img" loading="lazy" decoding="async" src={StraightPaloAltoLogo}  alt="logo" width="209" height="40" />
             </a>
             <ul class="cs-ul">
                 <li class="cs-li">
-                    <a href="" class="cs-link">Home</a>
+                    <a href="/" class="cs-link">Home</a>
                 </li>
                 <li class="cs-li">
-                    <a href="" class="cs-link">About</a>
+                    <a href="/about/" class="cs-link">About</a>
                 </li>
                 <li class="cs-li">
                     <a href="" class="cs-link">Services</a>
-                </li>
-                <li class="cs-li">
-                    <a href="" class="cs-link">Blog</a>
                 </li>
                 <li class="cs-li">
                     <a href="" class="cs-link">Contact</a>
@@ -51,12 +54,10 @@
                 </li>
             </ul>
             <span class="cs-copyright">
-                © Copyright 2023 - <a href="" class="cs-copyright-link">Stitch Agency</a>
+                © Copyright 2024 - <a href="" class="cs-copyright-link">Palo Alto Web Designs</a>
             </span>
-            <div class="cs-flex">
-                <a href="" class="cs-copyright-link">Privacy Policy</a>
-                <span class="cs-separater">|</span>
-                <a href="" class="cs-copyright-link">Terms of Use</a>
+            <div class="cs-flex" style="color: #bababa">
+                Contact: <a href="mailto:erik@paloaltowebdesigns.com" class="cs-copyright-link">erik@paloaltowebdesigns.com</a>
             </div>
         </div>
     </div>

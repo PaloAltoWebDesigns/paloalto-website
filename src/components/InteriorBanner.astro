@@ -1,10 +1,18 @@
+---
+const url = Astro.request.url;
+const parts = url.split('/');
+const lastPart = parts[parts.length - 1] === '' ? parts[parts.length - 2] : parts[parts.length - 1];
+const capitalizedLastPart = lastPart.charAt(0).toUpperCase() + lastPart.slice(1);
+---
+
+
 <!-- ============================================ -->
 <!--                   Banner                     -->
 <!-- ============================================ -->
 
 <div id="banner-712">
     <div class="cs-container">
-        <span class="cs-int-title">Interior Page</span>
+        <span class="cs-int-title">{capitalizedLastPart}</span>
     </div>
     <!--Background Image-->
     <picture class="cs-background">

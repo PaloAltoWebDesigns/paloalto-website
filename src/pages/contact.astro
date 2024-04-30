@@ -25,20 +25,27 @@ import Footer from "../components/Footer.astro"
                 <div class="cs-content">
                     <span class="cs-topper">Contact Us</span>
                     <h2 class="cs-title">Make An Appointment</h2>
+                    
                     <!--Form-->
-                    <form class="cs-form" id="cs-form-1105" name="Contact Form" method="post">
+                    <form class="cs-form" id="cs-form-1105" name="Contact Form" action="https://api.sheetmonkey.io/form/yRF3TUfzpxkhrdNU1Q8r6" method="post">
                         <label class="cs-label">
                             Name
-                            <input class="cs-input" required type="text" id="name-1105" name="name" placeholder="Name">
+                            <input class="cs-input" required type="text" id="name-1105" name="Name" placeholder="Name">
                         </label>
                         <label class="cs-label cs-email">
                             Email
-                            <input class="cs-input" required type="email" id="email-1105" name="email" placeholder="Email">
+                            <input class="cs-input" required type="email" id="email-1105" name="Email" placeholder="Email">
                         </label>
                         <label class="cs-label">
                             Message
                             <textarea class="cs-input cs-textarea" required name="Message" id="message-1105" placeholder="Write message..."></textarea>
                         </label>
+                        <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                        <input 
+                        type="hidden" 
+                        name="x-sheetmonkey-redirect" 
+                        value="https://paloaltowebdesigns.com/contact/" 
+                         />
                         <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
                     </form>
                 </div>

@@ -1,9 +1,8 @@
 ---
-import "../styles/global.css"
+import PortfolioComponent from '../components/Portfolio.astro';
 import Navbar from "../components/Navbar.astro"
 import Footer from "../components/Footer.astro"
-import InteriorBanner from "../components/InteriorBanner.astro"
-import Services from "../components/Services.astro"
+import "../styles/global.css"
 ---
 
 <html lang="en">
@@ -11,12 +10,11 @@ import Services from "../components/Services.astro"
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>About Us</title>
+        <title>Portfolio</title>
     </head>
     <body>
-        <Navbar />
-        <InteriorBanner />
-        <Services />
-        <Footer />
+        <Navbar/>
+        <PortfolioComponent/>
+        <Footer/>
     </body>
 </html>

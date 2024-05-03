@@ -1,3 +1,10 @@
+---
+import CodeImage from '../images/code.jpg';
+import LaptopImage from '../images/laptop.jpg';
+import WebsiteImage from '../images/website.jpg';
+---
+
+
 <!-- ============================================ -->
 <!--                  Services                    -->
 <!-- ============================================ -->
@@ -10,30 +17,30 @@
             <p class="cs-text">
                 We are a full service web development company offering everything from web apps and professional websites to full business website do-overs and new additions. We help manage your website so that you don't have to worry about it. 
             </p>
-            <a href="/portfolio.html" class="cs-button-solid">View Portfolio</a>
+            <a href="/portfolio/" class="cs-button-solid">View Portfolio</a>
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
                 <h3 class="cs-h3">New Website Design</h3>
                 <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Services/s1.png">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Services/s1.png">
+                    <source media="(max-width: 600px)" srcset={WebsiteImage.src}>
+                    <source media="(min-width: 601px)" srcset={WebsiteImage.src}>
                     <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Services/s1.png" alt="house" width="275" height="132">
                 </picture>
             </li>
             <li class="cs-item">
                 <h3 class="cs-h3">Renovations</h3>
                 <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Services/s2.png">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Services/s2.png">
+                    <source media="(max-width: 600px)" srcset={CodeImage.src}>
+                    <source media="(min-width: 601px)" srcset={CodeImage.src}>
                     <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Services/s2.png" alt="stairs" width="275" height="132">
                 </picture>
             </li>
             <li class="cs-item">
                 <h3 class="cs-h3">Additions</h3>
                 <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Services/s3.png">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Services/s3.png">
+                    <source media="(max-width: 600px)" srcset={LaptopImage.src}>
+                    <source media="(min-width: 601px)" srcset={LaptopImage.src}>
                     <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Services/s3.png" alt="bathroom" width="275" height="132">
                 </picture>
             </li>

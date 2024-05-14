@@ -1,0 +1,218 @@
+---
+
+---
+
+<!-- ============================================ -->
+<!--                  Gallery                     -->
+<!-- ============================================ -->
+
+<section id="gallery-42">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Standard & 360° Photos</span>
+                <h2 class="cs-title">View Our Gallery</h2>
+            </div>
+            <div class="cs-flex">
+                <p class="cs-text">
+                    No Photos? No Problem! We help you take photos for your business to include in your website.
+                </p>
+                <a aria-label="view more pictures" href="" class="cs-link">
+                    View More
+                    <!-- SVG Arrow -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.84999C16.55 8.52999 16.01 8.75999 16.01 9.19999V11Z" fill="#14142B"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="cs-image-group">
+            <picture class="cs-picture cs-picture-1">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra1-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra1.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra1.jpg" alt="formerly dress you people outside" width="380" height="271">
+            </picture>
+            <picture class="cs-picture cs-picture-2">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra2-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra2.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra2.jpg" alt="formal dinner" width="380" height="271">
+            </picture>
+            <picture class="cs-picture cs-picture-3">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra3-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra3.jpg">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1715718495071!6m8!1m7!1sCAoSLEFGMVFpcE96V01vWm1RVlZZOHlwb2J1UERaS2diSEIyRlhSd29nOXNWMElG!2m2!1d37.4513944!2d-122.1196278!3f66.49309640862478!4f-16.241991734758884!5f0.4000000000000002" width="630" height="440" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     
+            </picture>
+            <picture class="cs-picture cs-picture-4">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra4-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra4.jpg">
+                <iframe src="https://splits.360in.click/48356057-df72-4e1a-9992-fdfd68b03be1" width="630" height="440"></iframe>     
+            </picture>
+            <picture class="cs-picture cs-picture-5">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra5-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra5.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra5.jpg" alt="formal evening" width="380" height="271">
+            </picture>
+            <picture class="cs-picture cs-picture-6">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra6-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra6.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra6.jpg" alt="formal dinner" width="380" height="271">
+            </picture>
+        </div>
+    </div>
+</section>
+                                
+<style>
+    /*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+    #gallery-42 {
+        padding: var(--sectionPadding);
+    }
+    #gallery-42 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #gallery-42 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+    }
+
+    #gallery-42 .cs-text {
+        margin-bottom: 1rem;
+        max-width: 39.375rem;
+    }
+    #gallery-42 .cs-text:last-of-type {
+        margin-bottom: 2rem;
+    }
+    #gallery-42 .cs-link {
+        font-size: 0.9375rem;
+        font-weight: 700;
+        text-decoration: none;
+        line-height: 1.5em;
+        width: 6.25rem;
+        color: var(--headerColor);
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #gallery-42 .cs-link:before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: currentColor;
+        opacity: 1;
+        bottom: -0.1875rem;
+        left: 0;
+    }
+    #gallery-42 .cs-link:hover svg {
+        transform: translateX(0.4375rem);
+    }
+    #gallery-42 .cs-link svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        transition: transform 0.3s;
+    }
+    #gallery-42 .cs-image-group {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, 31vw);
+        /* 16px - 20px */
+        gap: clamp(0.5rem, 1.5vw, 1.25rem);
+    }
+    #gallery-42 .cs-picture {
+        display: block;
+        position: relative;
+    }
+    #gallery-42 .cs-picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #gallery-42 .cs-picture-1 {
+        grid-column: 1 / span 6;
+        grid-row: span 1;
+    }
+    #gallery-42 .cs-picture-2 {
+        grid-column: 7 / span 6;
+        grid-row: span 1;
+    }
+    #gallery-42 .cs-picture-3 {
+        grid-column: 1 / span 12;
+        grid-row: 2 / span 2;
+    }
+    #gallery-42 .cs-picture-4 {
+        grid-column: 1 / span 12;
+        grid-row: 4 / span 2;
+    }
+    #gallery-42 .cs-picture-5 {
+        grid-column: 1 / span 6;
+        grid-row: 6 / span 1;
+    }
+    #gallery-42 .cs-picture-6 {
+        grid-column: 7 / span 6;
+        grid-row: 6 / span 1;
+    }
+}
+/* Tablet */
+@media only screen and (min-width: 48rem) {
+    #gallery-42 .cs-content {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+    #gallery-42 .cs-flex {
+        min-width: 45%;
+    }
+    #gallery-42 .cs-image-group {
+        /* 116px - 210px */
+        grid-template-rows: repeat(3, clamp(7.25rem, 16vw, 13.125rem));
+    }
+    #gallery-42 .cs-picture-1 {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 1;
+    }
+    #gallery-42 .cs-picture-2 {
+        grid-column: 4 / span 3;
+        grid-row: 1 / span 1;
+    }
+    #gallery-42 .cs-picture-3 {
+        grid-column: 1 / span 6;
+        grid-row: 2 / span 2;
+    }
+    #gallery-42 .cs-picture-4 {
+        grid-column: 7 / span 6;
+        grid-row: 1 / span 2;
+    }
+    #gallery-42 .cs-picture-5 {
+        grid-column: 7 / span 3;
+        grid-row: 3 / span 1;
+    }
+    #gallery-42 .cs-picture-6 {
+        grid-column: 10 / span 3;
+        grid-row: 3 / span 1;
+    }
+}
+                                
+</style>

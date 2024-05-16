@@ -1,5 +1,8 @@
 ---
-
+import FerraroPicture from '../images/FR-1004.jpg';
+import CafePicture from '../images/cafe.jpg'
+import WomanCutPic from '../images/womenCut.jpg'
+import StoreFrontPic from '../images/storefront.jpg'
 ---
 
 <!-- ============================================ -->
@@ -15,7 +18,7 @@
             </div>
             <div class="cs-flex">
                 <p class="cs-text">
-                    No Photos? No Problem! We help you take photos for your business to include in your website.
+                    No Photos? No Problem! We help you take photos for your business to include in your website. We also upload photos to Google Maps so customers can reach your location easier!
                 </p>
                 <a aria-label="view more pictures" href="" class="cs-link">
                     View More
@@ -28,34 +31,30 @@
         </div>
         <div class="cs-image-group">
             <picture class="cs-picture cs-picture-1">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra1-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra1.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra1.jpg" alt="formerly dress you people outside" width="380" height="271">
+                <source media="(max-width: 600px)" srcset={FerraroPicture.src}>
+                <source media="(min-width: 601px)" srcset={FerraroPicture.src}>
+                <img loading="lazy" decoding="async" src={FerraroPicture.src} alt="formerly dress you people outside" width="380" height="271">
             </picture>
             <picture class="cs-picture cs-picture-2">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra2-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra2.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra2.jpg" alt="formal dinner" width="380" height="271">
+                <source media="(max-width: 600px)" srcset={CafePicture.src}>
+                <source media="(min-width: 601px)" srcset={CafePicture.src}>
+                <img loading="lazy" decoding="async" src={CafePicture.src} alt="formal dinner" width="380" height="271">
             </picture>
             <picture class="cs-picture cs-picture-3">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra3-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra3.jpg">
                 <iframe src="https://www.google.com/maps/embed?pb=!4v1715718495071!6m8!1m7!1sCAoSLEFGMVFpcE96V01vWm1RVlZZOHlwb2J1UERaS2diSEIyRlhSd29nOXNWMElG!2m2!1d37.4513944!2d-122.1196278!3f66.49309640862478!4f-16.241991734758884!5f0.4000000000000002" width="630" height="440" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     
             </picture>
             <picture class="cs-picture cs-picture-4">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra4-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra4.jpg">
                 <iframe src="https://splits.360in.click/48356057-df72-4e1a-9992-fdfd68b03be1" width="630" height="440" style="border:0;" allow="fullscreen" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     
             </picture>
             <picture class="cs-picture cs-picture-5">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra5-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra5.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra5.jpg" alt="formal evening" width="380" height="271">
+                <source media="(max-width: 600px)" srcset={WomanCutPic.src}>
+                <source media="(min-width: 601px)" srcset={WomanCutPic.src}>
+                <img loading="lazy" decoding="async" src={WomanCutPic.src} alt="formal evening" width="380" height="271">
             </picture>
             <picture class="cs-picture cs-picture-6">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra6-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra6.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra6.jpg" alt="formal dinner" width="380" height="271">
+                <source media="(max-width: 600px)" srcset={StoreFrontPic.src}>
+                <source media="(min-width: 601px)" srcset={StoreFrontPic.src}>
+                <img loading="lazy" decoding="async" src={StoreFrontPic.src}  alt="formal dinner" width="380" height="271">
             </picture>
         </div>
     </div>
@@ -142,7 +141,7 @@
         display: block;
         position: relative;
     }
-    #gallery-42 .cs-picture img {
+    #gallery-42 .cs-picture img, iframe {
         position: absolute;
         top: 0;
         left: 0;
@@ -150,6 +149,9 @@
         width: 100%;
         object-fit: cover;
     }
+
+
+    
     #gallery-42 .cs-picture-1 {
         grid-column: 1 / span 6;
         grid-row: span 1;

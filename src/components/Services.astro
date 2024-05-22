@@ -1,5 +1,4 @@
 ---
-import CodeImage from '../images/code.jpg';
 import LaptopImage from '../images/laptop.jpg';
 import WebsiteImage from '../images/website.jpg';
 import BrickWall from '../images/brick-wall.jpg';
@@ -13,6 +12,7 @@ import BrickWall from '../images/brick-wall.jpg';
 <section id="services-264">
     <div class="cs-container">
         <div class="cs-content">
+            <a href="/contact/" id="web-button" class="cs-button-solid" style="margin-bottom: 25px;">Get a Website</a>
             <span class="cs-topper">Services</span>
             <h2 class="cs-title">What We Do</h2>
             <p class="cs-text">
@@ -222,5 +222,41 @@ import BrickWall from '../images/brick-wall.jpg';
         transform: scale(1.2);
     }
 }
-                    
+               
+    /* Custom CSS */
+
+    .cs-button-solid-custom {
+        align-self: center;
+        font-size: 1rem;
+        line-height: 3.5rem;
+        text-decoration: none;
+        font-weight: 700;
+        margin: auto;
+        color: #fff;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 25px;
+    }
+.cs-button-solid-custom:before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.25rem;
+        transition: width 0.3s;
+    }
+.cs-button-solid-custom:hover:before {
+        width: 100%;
+    }
+
 </style>

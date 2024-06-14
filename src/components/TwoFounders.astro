@@ -1,3 +1,8 @@
+---
+import ErikPhoto from "../images/erik.png"
+import AdrianaPhoto from "../images/adriana.jpg"
+---
+
 <!-- ============================================ -->
 <!--                  Donations                   -->
 <!-- ============================================ -->
@@ -5,39 +10,31 @@
 <section id="donations-1428">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Popular Causes</span>
-            <h2 class="cs-title">Find Our Popular Causes</h2>
+            <span class="cs-topper">Meet our Team</span>
+            <h2 class="cs-title">Experts Behind the Scenes</h2>
             <p class="cs-text">
-                Join the community to give education for the children and together make them educated for their lives. We help companies develop powerful corporate. Every man must decide whether he will walk in the light. 
+              At Palo Alto Web Designs, we strive to give the best experience and services to every client that chooses to work with us. Meet the team members that make it all possible.
+
             </p>
-            <a href="" class="cs-button-solid">View All Causes</a>
+            <a href="" class="cs-button-solid">Meet the Team</a>
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
                 <a href="" class="cs-link">
                     <picture class="cs-picture" aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/factory.jpg">
-                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/factory.jpg">
+                        <source media="(max-width: 600px)" srcset={ErikPhoto.src}>
+                        <source media="(min-width: 601px)" srcset={ErikPhoto.src}>
                         <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/factory.jpg" alt="factory" width="305" height="240">
                     </picture>
                     <div class="cs-flex">
-                        <h3 class="cs-h3">Reduce Air Pollution</h3>
+                        <h3 class="cs-h3">Erik Rodriguez</h3>
                         <p class="cs-item-text">
-                            We help companies develop powerful corporate responsibility and employee engagement.
+                          Website Developer and Fullstack Engineer.
                         </p>
-                        <div class="cs-donations-flex">
-                            <div class="cs-bar">
-                                <!--change the --progress number to match the percentage in cs-number-->
-                                <div class="cs-progress" aria-hidden="true">
-                                    <span class="cs-progress-bar"  style="--progress: 65%"></span>
-                                </div>
-                            </div>
-                        </div>
                         <div class="cs-number-group">
                             <span class="cs-raised">
-                                <span class="cs-number">$5200 Raised Of $15000</span>
+                                <span class="cs-number">San Jose State University</span>
                             </span>
-                            <span class="cs-percentage">65%</span>
                         </div>
                     </div>
                 </a>
@@ -45,28 +42,19 @@
             <li class="cs-item">
                 <a href="" class="cs-link">
                     <picture class="cs-picture" aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/table.jpg">
-                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/table.jpg">
+                        <source media="(max-width: 600px)" srcset={AdrianaPhoto.src}>
+                        <source media="(min-width: 601px)" srcset={AdrianaPhoto.src}>
                         <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/table.jpg" alt="desk" width="305" height="240">
                     </picture>
                     <div class="cs-flex">
-                        <h3 class="cs-h3">Be Efficient In Energy Use</h3>
+                        <h3 class="cs-h3">Adriana Alvarado</h3>
                         <p class="cs-item-text">
-                            We help companies develop powerful corporate responsibility and employee engagement.
+                          UX/UI Designer and Website Developer.
                         </p>
-                        <div class="cs-donations-flex">
-                            <div class="cs-bar">
-                                <!--change the --progress number to match the percentage in cs-number-->
-                                <div class="cs-progress" aria-hidden="true">
-                                    <span class="cs-progress-bar"  style="--progress: 90%"></span>
-                                </div>
-                            </div>
-                        </div>
                         <div class="cs-number-group">
                             <span class="cs-raised">
-                                <span class="cs-number">$5200 Raised Of $15000</span>
+                                <span class="cs-number">University of Redlands</span>
                             </span>
-                            <span class="cs-percentage">65%</span>
                         </div>
                     </div>
                 </a>
@@ -75,26 +63,6 @@
     </div>
     <!--Stats Group-->
     <div class="cs-stats-container">
-        <ul class="cs-stats-group">
-            <li class="cs-stat">
-                <picture class="cs-icon-wrapper">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/box-heart.svg" alt="icon" width="48" height="48">
-                </picture>
-                <div class="cs-info">
-                    <span class="cs-stat-number">78k+</span>
-                    <span class="cs-desc">Raised by 6,388 people in 7 days</span>
-                </div>
-            </li>
-            <li class="cs-stat">
-                <picture class="cs-icon-wrapper">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/hands.svg" alt="icon" width="48" height="48">
-                </picture>
-                <div class="cs-info">
-                    <span class="cs-stat-number">8M+</span>
-                    <span class="cs-desc">People got your support in 5 years</span>
-                </div>
-            </li>
-        </ul>
     </div>
     <!-- Background Graphic -->
     <picture class="cs-background">
@@ -493,7 +461,7 @@
     align-self: center;
   }
   #donations-1428 .cs-item:nth-of-type(2) {
-    transform: translateY(6.25rem);
+    /* transform: translateY(6.25rem); */
   }
   #donations-1428 .cs-card-group {
     max-width: 39.375rem;
